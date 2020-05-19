@@ -1,3 +1,5 @@
+//Change build display name
+currentBuild.displayName = "petclinic-#"+currentBuild.number
 pipeline{
     agent any
     //Adding maven distribution to PATH variable
