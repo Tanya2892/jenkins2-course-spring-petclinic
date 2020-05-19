@@ -38,6 +38,6 @@ pipeline{
     }
 }
 def getDockerTag(){
-    def tag = powershell label: '', script: 'git rev-parse HEAD', returnStdout = true
+    def tag = bat label: 'current commit id', script: 'git rev-parse HEAD', returnStdout = true
     return tag
     }
